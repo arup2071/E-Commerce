@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VibeMarket | Premium E-Commerce</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3 text-primary" href="#">Vibe<span class="text-dark">Market</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto text-center">
+                    <li class="nav-item"><a class="nav-link active fw-semibold" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold" href="#shop">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold" href="#features">Features</a></li>
+                </ul>
+                <div class="d-flex justify-content-center">
+                    <button class="btn btn-outline-dark position-relative rounded-pill px-4" type="button"
+                        data-bs-toggle="offcanvas" data-bs-target="#cartSidebar">
+                        <i class="fa-solid fa-bag-shopping me-2"></i>Cart
+                        <span id="cart-count"
+                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Carousel Hero Section -->
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active hero-bg-1">
+                <div class="container h-100 d-flex align-items-center">
+                    <div class="col-md-6 text-white text-shadow">
+                        <span class="badge bg-warning text-dark mb-2 px-3 py-2 fw-bold text-uppercase">New Season</span>
+                        <h1 class="display-3 fw-bold mb-3">Elevate Your Everyday Style</h1>
+                        <p class="lead mb-4">Discover curated high-quality products built to complement your minimalist
+                            lifestyle.</p>
+                        <a href="#shop" class="btn btn-primary btn-lg rounded-pill px-4 py-2 shadow">Shop The
+                            Collection</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Core Brand Features -->
+    <section id="features" class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-md-4">
+                    <div class="p-4 bg-white rounded shadow-sm h-100">
+                        <i class="fa-solid fa-truck-fast text-primary fs-1 mb-3"></i>
+                        <h5 class="fw-bold">Free Shipping</h5>
+                        <p class="text-muted mb-0">On all orders over $50 with reliable tracking updates.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 bg-white rounded shadow-sm h-100">
+                        <i class="fa-solid fa-arrow-rotate-left text-primary fs-1 mb-3"></i>
+                        <h5 class="fw-bold">30-Day Returns</h5>
+                        <p class="text-muted mb-0">Not in love? Return items easily within 30 days hassle-free.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 bg-white rounded shadow-sm h-100">
+                        <i class="fa-solid fa-lock text-primary fs-1 mb-3"></i>
+                        <h5 class="fw-bold">Secure Payment</h5>
+                        <p class="text-muted mb-0">Your financial data is protected with high-tier SSL encryption.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop Product Section -->
+    <section id="shop" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">Trending Products</h2>
+                <p class="text-muted">Our top picks updated weekly</p>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="row g-4">
+                <!-- Product 1 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 product-card border-0 shadow-sm overflow-hidden">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=500&q=80"
+                                class="card-img-top product-img" alt="Minimalist Watch">
+                            <span class="badge bg-danger position-absolute top-0 start-0 m-3 px-3 py-2">Hot</span>
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column">
+                            <h5 class="card-title fw-bold mb-1">Minimalist White Watch</h5>
+                            <p class="text-muted small mb-3">Premium leather straps</p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <span class="fw-bold text-primary fs-5">$129.00</span>
+                                <button class="btn btn-dark btn-sm rounded-circle add-to-cart-btn" data-id="1"
+                                    data-name="Minimalist White Watch" data-price="129.00">
+                                    <i class="fa-solid fa-plus p-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 product-card border-0 shadow-sm overflow-hidden">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=500&q=80"
+                                class="card-img-top product-img" alt="Wireless Headphones">
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column">
+                            <h5 class="card-title fw-bold mb-1">Wireless ANC Headphones</h5>
+                            <p class="text-muted small mb-3">Pure bass, active noise canceling</p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <span class="fw-bold text-primary fs-5">$199.99</span>
+                                <button class="btn btn-dark btn-sm rounded-circle add-to-cart-btn" data-id="2"
+                                    data-name="Wireless ANC Headphones" data-price="199.99">
+                                    <i class="fa-solid fa-plus p-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 product-card border-0 shadow-sm overflow-hidden">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=500&q=80"
+                                class="card-img-top product-img" alt="Leather Backpack">
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column">
+                            <h5 class="card-title fw-bold mb-1">Classic Leather Backpack</h5>
+                            <p class="text-muted small mb-3">Waterproof premium tan leather</p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <span class="fw-bold text-primary fs-5">$85.50</span>
+                                <button class="btn btn-dark btn-sm rounded-circle add-to-cart-btn" data-id="3"
+                                    data-name="Classic Leather Backpack" data-price="85.50">
+                                    <i class="fa-solid fa-plus p-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 product-card border-0 shadow-sm overflow-hidden">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=500&q=80"
+                                class="card-img-top product-img" alt="Running Shoes">
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column">
+                            <h5 class="card-title fw-bold mb-1">Air Athletics Sport Shoes</h5>
+                            <p class="text-muted small mb-3">Breathable mesh mesh knit</p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <span class="fw-bold text-primary fs-5">$95.00</span>
+                                <button class="btn btn-dark btn-sm rounded-circle add-to-cart-btn" data-id="4"
+                                    data-name="Air Athletics Sport Shoes" data-price="95.00">
+                                    <i class="fa-solid fa-plus p-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slide-out Shopping Cart Sidebar -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartSidebar" aria-labelledby="cartSidebarLabel">
+        <div class="offcanvas-header border-bottom">
+            <h5 class="offcanvas-title fw-bold" id="cartSidebarLabel"><i
+                    class="fa-solid fa-cart-shopping text-primary me-2"></i>Your Cart</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column justify-content-between">
+            <!-- Dynamic Cart Items Container -->
+            <div id="cart-items-container" class="overflow-auto mb-3">
+                <p class="text-muted text-center my-5 empty-msg">Your shopping cart is currently empty.</p>
+            </div>
+
+            <!-- Checkout Calculations Section -->
+            <div class="border-top pt-3 bg-white">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <span class="fs-5 fw-semibold">Total Price:</span>
+                    <span id="cart-total" class="fs-4 fw-bold text-primary">$0.00</span>
+                </div>
+                <button id="checkout-btn" class="btn btn-primary w-100 py-3 rounded-pill fw-bold" disabled>Proceed to
+                    Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 VibeMarket Ecosystem. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
